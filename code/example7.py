@@ -8,7 +8,6 @@ import wordcloud
 # 导入imageio库中的imread函数，并用这个函数读取本地图片，作为词云形状图片
 import imageio
 mk = imageio.imread("chinamap.png")
-w = wordcloud.WordCloud(mask=mk)
 
 # 构建并配置词云对象w，注意要加scale参数，提高清晰度
 w = wordcloud.WordCloud(width=1000,
